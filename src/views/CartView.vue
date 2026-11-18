@@ -54,7 +54,7 @@ function submit() {
                 <b>{{ r.l.qty }}</b>
                 <button type="button" :aria-label="`Περισσότερα: ${r.p.name}`" :disabled="r.l.qty >= r.v.stock" @click="setQty(r.l.productId, r.l.variantId, r.l.qty + 1)">+</button>
               </div>
-              <p style="margin: .3rem 0 0; font: 500 1.3rem 'Vollkorn', serif">{{ formatEuro(r.v.price * r.l.qty) }}</p>
+              <p style="margin: .3rem 0 0; font: 500 1.3rem 'Vollkorn Variable', serif">{{ formatEuro(r.v.price * r.l.qty) }}</p>
             </div>
           </div>
         </section>

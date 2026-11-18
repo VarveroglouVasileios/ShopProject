@@ -11,6 +11,8 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@fontsource-variable/source-sans-3": "^5.3.1",
+    "@fontsource-variable/vollkorn": "^5.3.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.0"
   },

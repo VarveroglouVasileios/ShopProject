@@ -27,7 +27,7 @@ const gift = () => catalog.value.find((p) => p.id === 'set')!
         <svg class="stamp" viewBox="0 0 200 200" role="img" aria-label="Εξαιρετικό παρθένο, Θάσος, συγκομιδή">
           <circle cx="100" cy="100" r="98" fill="#2b3318" />
           <defs><path id="ring" d="M100 100m-72 0a72 72 0 1 1 144 0a72 72 0 1 1-144 0" /></defs>
-          <text font-family="Source Sans 3" font-weight="700" font-size="15" letter-spacing="3.4" fill="#e7e2cf"><textPath href="#ring">ΕΞΑΙΡΕΤΙΚΟ ΠΑΡΘΕΝΟ ✦ ΘΑΣΟΣ ✦ ΣΥΓΚΟΜΙΔΗ ✦</textPath></text>
+          <text font-family="Source Sans 3 Variable" font-weight="700" font-size="15" letter-spacing="3.4" fill="#e7e2cf"><textPath href="#ring">ΕΞΑΙΡΕΤΙΚΟ ΠΑΡΘΕΝΟ ✦ ΘΑΣΟΣ ✦ ΣΥΓΚΟΜΙΔΗ ✦</textPath></text>
           <circle cx="100" cy="100" r="30" fill="#c8962b" />
         </svg>
       </div>
@@ -66,7 +66,7 @@ const gift = () => catalog.value.find((p) => p.id === 'set')!
         <p class="eyebrow">Δώρα</p>
         <h2 id="g">Το κουτί <em>δώρου.</em></h2>
         <p style="font-size: 1.2rem; max-width: 28rem; margin-top: 1.4rem">{{ gift().description }}</p>
-        <p style="display: flex; gap: 1.4rem; align-items: center; flex-wrap: wrap; margin-top: 1.6rem"><b style="font: 500 2.8rem 'Vollkorn', serif">{{ formatEuro(gift().variants[0].price) }}</b><RouterLink class="btn" to="/product/set">Στείλτε το</RouterLink></p>
+        <p style="display: flex; gap: 1.4rem; align-items: center; flex-wrap: wrap; margin-top: 1.6rem"><b style="font: 500 2.8rem 'Vollkorn Variable', serif">{{ formatEuro(gift().variants[0].price) }}</b><RouterLink class="btn" to="/product/set">Στείλτε το</RouterLink></p>
       </div>
       <img :src="img('gift')" alt="Ξύλινο κουτί δώρου με ελαιόλαδο, μέλι, ελιές και βότανα" loading="lazy" />
     </section>

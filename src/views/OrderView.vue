@@ -22,7 +22,7 @@ const label = (pid: string, vid: string) => {
       <table class="t"><tbody>
         <tr v-for="l in order.lines" :key="l.productId + l.variantId"><td>{{ l.qty }} × {{ label(l.productId, l.variantId) }}</td></tr>
         <tr><td>Αποστολή: {{ order.totals.shipping ? formatEuro(toEuros(order.totals.shipping)) : 'Δωρεάν' }}<span v-if="order.totals.discount"> · Έκπτωση −{{ formatEuro(toEuros(order.totals.discount)) }}</span></td></tr>
-        <tr><td style="font: 500 1.7rem 'Vollkorn', serif">Σύνολο {{ formatEuro(toEuros(order.totals.total)) }}</td></tr>
+        <tr><td style="font: 500 1.7rem 'Vollkorn Variable', serif">Σύνολο {{ formatEuro(toEuros(order.totals.total)) }}</td></tr>
       </tbody></table>
       <p style="margin-top: 1.5rem"><RouterLink class="btn" to="/">Συνεχίστε τις αγορές</RouterLink></p>
     </article>

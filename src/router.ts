@@ -9,6 +9,7 @@ export const router = createRouter({
     { path: '/cart', name: 'cart', component: () => import('./views/CartView.vue') },
     { path: '/order/:ref', name: 'order', component: () => import('./views/OrderView.vue') },
     { path: '/admin', name: 'admin', component: () => import('./views/AdminView.vue') },
+    { path: '/privacy', name: 'privacy', component: () => import('./views/PrivacyView.vue') },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
   scrollBehavior: (to) => (to.hash ? { el: to.hash, behavior: 'smooth' } : { top: 0 }),
